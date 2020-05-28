@@ -1,0 +1,44 @@
+﻿<head>
+    <title>Результат теста</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+
+    <nav>
+        <ul style="list-style-type: none;">
+            <li><a href="/home/Index">Главная</a></li>
+            <li><a href="/home/CppGuide">Базовые элементы языка C++</a></li>
+            <li><a href="/home/CppLessonsReferences">Уроки по C++</a></li>
+            <li><a href="/home/TestsCpp">Тесты по C++</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1 style="text-align:center">
+            Результат теста:
+            @{
+                Write(Model[0]);
+                Write(" из ");
+                Write(Model[1]);
+
+                <br />
+                <br />
+                if ((double)Model[0] / Model[1] < 0.3)
+                {
+                    <img src="../images/bad_result.jpg" alt="Плохой результат">
+                }
+                else if ((double)Model[0] / Model[1] < 0.6)
+                {
+                    <img src="../images/normal_result.jpg" alt="Средний результат">
+                }
+                else
+                {
+                    <img src="../images/good_result.jpg" alt="Хороший результат">
+                }
+            }
+        </h1>
+    </div>
+
+</body>

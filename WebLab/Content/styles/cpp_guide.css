@@ -1,0 +1,113 @@
+﻿* {
+    color: white;
+}
+
+body {
+    background-image: url(../images/body_background.png);
+}
+
+h1 {
+    text-decoration-color: white;
+}
+/*Рамки*/
+div {
+    width: auto;
+    height: auto;
+    background-color: #161616;
+    outline: 2px solid #00FF00;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+    nav ul li {
+        display: block;
+        padding: 20px;
+        float: left;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+div h1 {
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+div h2 {
+    padding-left: 30px;
+}
+
+div h3 {
+    padding-left: 30px;
+}
+
+div p {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+div ul {
+    text-indent: 1cm;
+    list-style-position: inside;
+    font-style: italic;
+}
+
+div ol {
+    text-indent: 1cm;
+    list-style-position: inside;
+    font-style: italic;
+}
+
+div table {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+    div table td {
+        border: 1px solid white;
+    }
+
+table {
+    font-size: 1cm;
+    width: 100%;
+}
+
+.code-row-even {
+    background-color: #222222;
+}
+
+.code-row-odd {
+    background-color: black;
+}
+
+.code-type-header {
+    color: orange;
+}
+
+.code-type-variable {
+    color: #1fe0d7;
+}
+
+.code-type-keyword {
+    color: #043185;
+}
+
+.code-type-comment {
+    color: #0e6b05;
+}
+
+.code-type-return {
+    color: #7e3987;
+}
+
+.code-type-num {
+    color: #4b8f3b;
+}

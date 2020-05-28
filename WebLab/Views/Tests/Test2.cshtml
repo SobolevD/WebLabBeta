@@ -1,0 +1,289 @@
+﻿<head>
+    <title>Средний уровень</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/test.css" />
+</head>
+
+
+
+<body>
+
+    <nav>
+        <ul style="list-style-type: none;">
+            <li><a href="/home/Index">Главная</a></li>
+            <li><a href="/home/CppGuide">Базовые элементы языка C++</a></li>
+            <li><a href="/home/CppLessonsReferences">Уроки по C++</a></li>
+            <li><a href="/home/TestsCpp">Тесты по C++</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Тест по С++ средний уровень</h1>
+        <form method="post" , action="">
+
+            <h3>Что происходит при использовании управляющего символа '\a'?</h3>
+            <ul>
+                <li><input type="radio" name="Q1" value="A1"> Ошибка исполнения программы: такого управляющего символа нет</li>
+                <li><input type="radio" name="Q1" value="A2"> Сдвиг курсора в начало строки</li>
+                <li><input type="radio" name="Q1" value="A3"> Выравнивание текста по центру консоли</li>
+                <li><input type="radio" name="Q1" value="A4"> Сигнал бипера (спикера) компьютера</li>
+            </ul>
+
+            <h3>Можно ли создать конструктор для структуры?</h3>
+            <ul>
+                <li><input type="radio" name="Q2" value="A1"> Да</li>
+                <li><input type="radio" name="Q2" value="A2"> Нет</li>
+            </ul>
+
+            <h3>Выберите верные утверждения на счет dynamic_cast:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q3" value="A1"> Используется для повышающего и понижающего приведения (приведение к базовому и дочернему типу)</li>
+                <li><input type="checkbox" name="Q3" value="A2"> При неверном приведении указателей выбрасывает исключение</li>
+                <li><input type="checkbox" name="Q3" value="A3"> При неверном приведении ссылок выбрасывает исключение std::bad_cast</li>
+                <li><input type="checkbox" name="Q3" value="A4"> Для переноса полей private в public в режиме работы программы</li>
+            </ul>
+
+            <h3>Возможно ли до окончания полного определения типа объявлять объекты или поля этого типа?</h3>
+            <ul>
+                <li><input type="radio" name="Q4" value="A1"> Да</li>
+                <li><input type="radio" name="Q4" value="A2"> Нет</li>
+            </ul>
+
+            <h3>Для чего используется ключевое слово union?</h3>
+            <ul>
+                <li><input type="radio" name="Q5" value="A1"> Позволяет объединить несколько переменных одного типа в один, упаковав их в массив</li>
+                <li><input type="radio" name="Q5" value="A2"> Позволяет представить в компактном виде данные, которые могут изменяться</li>
+                <li><input type="radio" name="Q5" value="A3"> Старое ключевое слово, которое использовалось до стандарта TR1</li>
+            </ul>
+
+            <h3>Какие из следующих операторов нельзя переопределить?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q6" value="A1"> sizeof</li>
+                <li><input type="checkbox" name="Q6" value="A2"> typeid</li>
+                <li><input type="checkbox" name="Q6" value="A3"> операторы каста (static_cast, dynamic_cast...)</li>
+                <li><input type="checkbox" name="Q6" value="A4"> = (присваивание)</li>
+                <li><input type="checkbox" name="Q6" value="A5"> [] (доступ по индексу)</li>
+                <li><input type="checkbox" name="Q6" value="A6"> .(доступ к полям)</li>
+                <li><input type="checkbox" name="Q6" value="A7"> :: (доступ к вложенным именам)</li>
+                <li><input type="checkbox" name="Q6" value="A8"> -> (доступ к полям по указателю)</li>
+                <li><input type="checkbox" name="Q6" value="A9"> ?: (тернарный оператор)</li>
+            </ul>
+
+            <h3>Для чего нужно ключевое слово volatile?</h3>
+            <ul>
+                <li><input type="radio" name="Q7" value="A1"> Ключевое слово используется перед переменными для того, чтобы сохранять их в регистры процессора (для оптимизации)</li>
+                <li><input type="radio" name="Q7" value="A2"> Ключевое слово используется для работы с копиями файлов</li>
+                <li><input type="radio" name="Q7" value="A3"> Ключевое слово ставится перед переменной, которую компилятор не должен оптимизировать</li>
+                <li><input type="radio" name="Q7" value="A4"> Ключевое слово для задания приоритета обработки переменной в условиях многопоточности</li>
+            </ul>
+
+            <h3>Какие из следующих возможностей открывает библиотека "cctype"?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q8" value="A1"> isalpha, iscntrl</li>
+                <li><input type="checkbox" name="Q8" value="A2"> std::string</li>
+                <li><input type="checkbox" name="Q8" value="A3"> std::map</li>
+                <li><input type="checkbox" name="Q8" value="A4"> tolower, toupper</li>
+                <li><input type="checkbox" name="Q8" value="A5"> std::runtime_error</li>
+            </ul>
+
+            <h3>Правильно передавать аргументы командной строки в функцию main() следующим образом:</h3>
+            <ul>
+                <li><input type="radio" name="Q9" value="A1"> void main(char* argv[]){//...}</li>
+                <li><input type="radio" name="Q9" value="A2"> void main(int argc, char* argv[]){//...}</li>
+                <li><input type="radio" name="Q9" value="A3"> void main(char* argv[], int argc){//...}</li>
+                <li><input type="radio" name="Q9" value="A4"> void main(std::string[int argc] argv){//...}</li>
+                <li><input type="radio" name="Q9" value="A5"> void main(std::string argv[int argc]){//...}</li>
+            </ul>
+
+            <h3>Выберите из списка операции, работающие на уровне битов:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q10" value="A1"> +</li>
+                <li><input type="checkbox" name="Q10" value="A2"> |</li>
+                <li><input type="checkbox" name="Q10" value="A3"> /</li>
+                <li><input type="checkbox" name="Q10" value="A4"> ^</li>
+                <li><input type="checkbox" name="Q10" value="A5"> ?:</li>
+                <li><input type="checkbox" name="Q10" value="A6"> %</li>
+                <li><input type="checkbox" name="Q10" value="A7"> &</li>
+            </ul>
+
+            <h3>Какие из операций преобразования доступны в стандартном C++?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q11" value="A1"> dynamic_cast</li>
+                <li><input type="checkbox" name="Q11" value="A2"> duration_cast</li>
+                <li><input type="checkbox" name="Q11" value="A3"> date_cast</li>
+                <li><input type="checkbox" name="Q11" value="A4"> reinterpret_cast</li>
+                <li><input type="checkbox" name="Q11" value="A5"> static_cast</li>
+                <li><input type="checkbox" name="Q11" value="A6"> volatile_cast</li>
+                <li><input type="checkbox" name="Q11" value="A7"> const_cast</li>
+            </ul>
+
+            <h3>Методы класса с ключевым словом "static":</h3>
+            <ul>
+                <li><input type="radio" name="Q12" value="A1"> Размещают локальные данные только на стеке</li>
+                <li><input type="radio" name="Q12" value="A2"> Могут быть созданы только без параметров</li>
+                <li><input type="radio" name="Q12" value="A3"> Наподобие классов имеют свои собственные конструкторы и деструкторы</li>
+                <li><input type="radio" name="Q12" value="A4"> Могут быть использованы без привязки к определенному объекту</li>
+            </ul>
+
+            <h3>Что означает ключевое слово "inline"?</h3>
+            <ul>
+                <li><input type="radio" name="Q13" value="A1"> Используется для запроса, чтобы компилятор рассматривал вашу функцию как встроенную</li>
+                <li><input type="radio" name="Q13" value="A2"> Используется для более оптимизированного хранения переменной</li>
+                <li><input type="radio" name="Q13" value="A3"> Таким ключевым словом отмечаются функции, которые должны быть глобальными</li>
+                <li><input type="radio" name="Q13" value="A4"> Таким ключевым словом отмечаются функции, которые допускают возможность автоматического удаления выделенной в куче памяти</li>
+            </ul>
+
+            <h3>В случае выполнения следующей строчки кода (в блоке "try"): "throw "Exception;" обработка данного исключения может передаваться в обработчики:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q14" value="A1"> catch(char*){/...}</li>
+                <li><input type="checkbox" name="Q14" value="A2"> catch(std::exception){/...}</li>
+                <li><input type="checkbox" name="Q14" value="A3"> catch(const char*){/...}</li>
+                <li><input type="checkbox" name="Q14" value="A4"> catch(std::string){/...}</li>
+                <li><input type="checkbox" name="Q14" value="A5"> catch(...){/...}</li>
+            </ul>
+
+            <h3>Какими из перечисленных способов можно завершить выполнение программы?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q15" value="A1"> Возвратом из функции main()</li>
+                <li><input type="checkbox" name="Q15" value="A2"> Оператором break в функции main()</li>
+                <li><input type="checkbox" name="Q15" value="A3"> Вызовом функции abort() (cstdlib)</li>
+                <li><input type="checkbox" name="Q15" value="A4"> Вызовом функции atexit() (cstdlib)</li>
+                <li><input type="checkbox" name="Q15" value="A5"> Вызовом функции exit() (cstdlib)</li>
+            </ul>
+
+            <h3>Для чего используется хэш-функция?</h3>
+            <ul>
+                <li><input type="radio" name="Q16" value="A1"> Хэш-функция распределяет работу на несколько потоков процессора</li>
+                <li><input type="radio" name="Q16" value="A2"> Хэш-функция позволяет работать с данными, которые уже преобразованы в хэш данные</li>
+                <li><input type="radio" name="Q16" value="A3"> Хэш-функция преобразует объект в уникальный числовой идентификатор</li>
+                <li><input type="radio" name="Q16" value="A4"> Хэш-функции не используются в языках "семейства Си"</li>
+            </ul>
+
+            <h3>Если для одного из полей константного объекта необходима возможность изменения этого поля, то следует ... (выберите корректный(е) способ(ы))</h3>
+            <ul>
+                <li><input type="checkbox" name="Q17" value="A1"> При объявлении данного поля использовать ключевое слово mutable</li>
+                <li><input type="checkbox" name="Q17" value="A2"> При объявлении данного поля использовать ключевое слово nonconst</li>
+                <li><input type="checkbox" name="Q17" value="A3"> Использовать приведение типа static_cast</li>
+                <li><input type="checkbox" name="Q17" value="A4"> Использовать метод класса с квалификатором const</li>
+                <li><input type="checkbox" name="Q17" value="A5"> Использовать приведение типа const_cast</li>
+            </ul>
+
+            <h3>Чем полезен стейтмент "assert"?</h3>
+            <ul>
+                <li><input type="radio" name="Q18" value="A1"> Помогает обнаружить бесконечные циклы</li>
+                <li><input type="radio" name="Q18" value="A2"> Если расположен в области видимости, где выделяется память, сообщает об утечках памяти, если таковые имеются</li>
+                <li><input type="radio" name="Q18" value="A3"> Это макрос, обрабатывающий условное выражение во время выполнения. Если условие не выполнено - происходит выход из программы</li>
+                <li><input type="radio" name="Q18" value="A4"> Производит поиск и вывод строк с висячими указателями</li>
+            </ul>
+
+            <h3>Чем отличается стейтмент "static_assert" от "assert"?</h3>
+            <ul>
+                <li><input type="radio" name="Q19" value="A1"> В отличие от assert, static_assert выполняется во время компиляции</li>
+                <li><input type="radio" name="Q19" value="A2"> В отличие от assert, может использоваться вне функции main()</li>
+                <li><input type="radio" name="Q19" value="A3"> В отличие от assert, static_assert позволяет отследить количество выделяемой памяти в куче</li>
+                <li><input type="radio" name="Q19" value="A4"> В отличие от assert, static_assert не выкидывает из программы в случае отрицательного результата проверки</li>
+            </ul>
+
+            <h3>Что такое "ellipsis" (в С++)?</h3>
+            <ul>
+                <li><input type="radio" name="Q20" value="A1"> Так называется ситуация, когда методы бесконечно вызывают друг друга по кругу, создавая бесконечную рекурсию</li>
+                <li><input type="radio" name="Q20" value="A2"> Это аргумент в функциях, обозначающийся "..." и позволяющий делать функции с неопределенным количеством параметров</li>
+                <li><input type="radio" name="Q20" value="A3"> Так называется ситуация, когда вложенный цикл делает внешний цикл бесконечным</li>
+                <li><input type="radio" name="Q20" value="A4"> Это ситуация, когда 4 объекта можно расположить в виде эллипса, где каждый объект эквивалентен двум соседям, но не равен объекту диаметрально противоположному</li>
+            </ul>
+
+            <h3>Существует нестатический метод foo() внутри какого-либо класса. Как можно обратиться к этому методу из этого же класса?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q21" value="A1"> foo()</li>
+                <li><input type="checkbox" name="Q21" value="A2"> this.foo()</li>
+                <li><input type="checkbox" name="Q21" value="A3"> this->foo()</li>
+                <li><input type="checkbox" name="Q21" value="A4"> this::foo()</li>
+                <li><input type="checkbox" name="Q21" value="A5"> *(*this).foo()</li>
+            </ul>
+
+            <h3>Выберите стандартные потоки вывода информации в библиотеке <iostream>:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q22" value="A1"> cout</li>
+                <li><input type="checkbox" name="Q22" value="A2"> cprint</li>
+                <li><input type="checkbox" name="Q22" value="A3"> cerr</li>
+                <li><input type="checkbox" name="Q22" value="A4"> cget</li>
+                <li><input type="checkbox" name="Q22" value="A5"> clog</li>
+                <li><input type="checkbox" name="Q22" value="A6"> cgetl</li>
+            </ul>
+
+            <h3>Для чего служит ключевое слово "override"?</h3>
+            <ul>
+                <li><input type="radio" name="Q23" value="A1"> Явно сообщает компилятору о том, что этот метод является переопределением родительской виртуальной функции</li>
+                <li><input type="radio" name="Q23" value="A2"> Перезаписывает все элементы массива чисел/указателей и делает их равными 0/nullptr</li>
+                <li><input type="radio" name="Q23" value="A3"> Явно указывает компилятору, что функция может быть перегружена</li>
+                <li><input type="radio" name="Q23" value="A4"> Явно указывает компилятору, что функция не может быть перегружена</li>
+            </ul>
+
+            <h3>Для чего используется модификатор "final"?</h3>
+            <ul>
+                <li><input type="radio" name="Q24" value="A1"> Такой модификатор используется только для пометки классов, которые нельзя наследовать</li>
+                <li><input type="radio" name="Q24" value="A2"> Такой модификатор используется для пометки функций, которые могут завершить программу, предварительно использовав специальный код</li>
+                <li><input type="radio" name="Q24" value="A3"> Такой модификатор используется для пометки методов и классов, которые нельзя наследовать</li>
+                <li><input type="radio" name="Q24" value="A4"> Это модификатор - ключевое слово, которое используется для завершения бесконечных циклов в случае если за 100 - 1000 итераций происходят повторяющиеся действия</li>
+            </ul>
+
+            <h3>Термин "связывание" означает:</h3>
+            <ul>
+                <li><input type="radio" name="Q25" value="A1"> Связывание двух функций, где одна используется в другой</li>
+                <li><input type="radio" name="Q25" value="A2"> Это процесс, который используется для конвертации идентификаторов (таких как имена переменных или функций) в адреса</li>
+                <li><input type="radio" name="Q25" value="A3"> Это процесс связывания классов в случае, когда один класс является "другом" другого</li>
+                <li><input type="radio" name="Q25" value="A4"> Это процесс связывания классов в отношении "предок - наследник"</li>
+            </ul>
+
+            <h3>Что называется "обрезкой объекта"?</h3>
+            <ul>
+                <li><input type="radio" name="Q26" value="A1"> Это ситуация, когда создается "обертка" класса с основными методами для работы с объектом</li>
+                <li><input type="radio" name="Q26" value="A2"> Это ситуация, когда копируется только часть объекта из-за ненадобности остальной</li>
+                <li><input type="radio" name="Q26" value="A3"> Это ситация, когда копируется только часть объекта в случае, если объект класса наследника присваивается объекту класса предка</li>
+                <li><input type="radio" name="Q26" value="A4"> Это ситуация, когда часть класса недоступна из-за отсутствия соответствующей библиотеки</li>
+            </ul>
+
+            <h3>Из предложенного списка выберите стандартные классы исключений:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q27" value="A1"> class exception</li>
+                <li><input type="checkbox" name="Q27" value="A2"> class cast_error</li>
+                <li><input type="checkbox" name="Q27" value="A3"> class bad_exception</li>
+                <li><input type="checkbox" name="Q27" value="A4"> class bad_range</li>
+                <li><input type="checkbox" name="Q27" value="A5"> class bad_length</li>
+                <li><input type="checkbox" name="Q27" value="A6"> class bad_alloc</li>
+                <li><input type="checkbox" name="Q27" value="A7"> class bad_cast</li>
+                <li><input type="checkbox" name="Q27" value="A8"> class runtime_error</li>
+                <li><input type="checkbox" name="Q27" value="A9"> class typeid_error</li>
+            </ul>
+
+            <h3>Ссылки r-value - это:</h3>
+            <ul>
+                <li><input type="radio" name="Q28" value="A1"> Это ссылки на функции, на объекты или переменные</li>
+                <li><input type="radio" name="Q28" value="A2"> Это ссылки на классы</li>
+                <li><input type="radio" name="Q28" value="A3"> Это ссылки на абстрактные методы и глобальные переменные</li>
+                <li><input type="radio" name="Q28" value="A4"> Это ссылки на литералы, временные значения и анонимные объекты</li>
+            </ul>
+
+            <h3>Для чего нужен std::move()?</h3>
+            <ul>
+                <li><input type="radio" name="Q29" value="A1"> Это стандартная библиотечная функция, которая конвертирует передаваемый аргумент в r-value</li>
+                <li><input type="radio" name="Q29" value="A2"> Это стандартная библиотечная функция, позволяющая обменять содержимое двух объектов</li>
+                <li><input type="radio" name="Q29" value="A3"> Это стандартная библиотечная функция, позволяющая переместить объект из кучи в стек</li>
+                <li><input type="radio" name="Q29" value="A4"> Это нестандартная библиотечная функция, позволяющая переработать функцию - аргумент в кроссплатформенную функцию</li>
+            </ul>
+
+            <h3>Какие умные указатели из стандартной библиотеки <memory> существуют?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q30" value="A1"> std::smart_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A2"> std::const_smart_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A3"> *std::shared_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A4"> std::const_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A5"> *std::weak_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A6"> *std::unique_ptr<...>()</li>
+                <li><input type="checkbox" name="Q30" value="A7"> std::safe_ptr<...>()</li>
+            </ul>
+            <input type="submit" style="margin-left:2cm; padding:initial; font-size:32px" value="Завершить тест" />
+        </form>
+    </div>
+
+</body>

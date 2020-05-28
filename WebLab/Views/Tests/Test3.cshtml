@@ -1,0 +1,206 @@
+﻿<head>
+    <title>Тест по контейнерам</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/test.css" />
+</head>
+
+<body>
+
+    <nav>
+        <ul style="list-style-type: none;">
+            <li><a href="/home/Index">Главная</a></li>
+            <li><a href="/home/CppGuide">Базовые элементы языка C++</a></li>
+            <li><a href="/home/CppLessonsReferences">Уроки по C++</a></li>
+            <li><a href="/home/TestsCpp">Тесты по C++</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Тест по С++: контейнеры STL</h1>
+        <form method="post" , action="">
+
+            <h3>Какие из ниже приведенных контейнеров существуют в стандартном C++?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q1" value="A1"> forward_vector</li>
+                <li><input type="checkbox" name="Q1" value="A2"> vector</li>
+                <li><input type="checkbox" name="Q1" value="A3"> forward_list</li>
+                <li><input type="checkbox" name="Q1" value="A4"> list</li>
+                <li><input type="checkbox" name="Q1" value="A5"> unordered_map</li>
+                <li><input type="checkbox" name="Q1" value="A6"> unordered_vector</li>
+                <li><input type="checkbox" name="Q1" value="A7"> set</li>
+                <li><input type="checkbox" name="Q1" value="A8"> multiarray</li>
+                <li><input type="checkbox" name="Q1" value="A9"> array</li>
+            </ul>
+
+            <h3>Существуют ли итераторы у контейнера "array"?</h3>
+            <ul>
+                <li><input type="radio" name="Q2" value="A1"> Да</li>
+                <li><input type="radio" name="Q2" value="A2"> Нет</li>
+                <li><input type="radio" name="Q2" value="A3"> Такого контейнера в языке С++ нет</li>
+            </ul>
+
+            <h3>Если в "vector" происходит вставка элемента с помощью "insert" по итератору, куда вставится элемент?</h3>
+            <ul>
+                <li><input type="radio" name="Q3" value="A1"> На позицию после итератора</li>
+                <li><input type="radio" name="Q3" value="A2"> На позицию итератора</li>
+                <li><input type="radio" name="Q3" value="A3"> На позицию перед итератором</li>
+            </ul>
+
+            <h3>Каких методов в контейнере "multiset" не существует?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q4" value="A1"> extract</li>
+                <li><input type="checkbox" name="Q4" value="A2"> empty</li>
+                <li><input type="checkbox" name="Q4" value="A3"> swap</li>
+                <li><input type="checkbox" name="Q4" value="A4"> stap</li>
+                <li><input type="checkbox" name="Q4" value="A5"> merge</li>
+                <li><input type="checkbox" name="Q4" value="A6"> search</li>
+                <li><input type="checkbox" name="Q4" value="A7"> mix</li>
+                <li><input type="checkbox" name="Q4" value="A8"> value_comp</li>
+                <li><input type="checkbox" name="Q4" value="A9"> name_comp</li>
+            </ul>
+
+            <h3>Чем в некоторых классах-контейнерах метод "at()" отличается от простого обращения по индексу?</h3>
+            <ul>
+                <li><input type="radio" name="Q5" value="A1"> Метод возвращает булевское значение: истину, если элемент находится по указанному индексу, ложь - в противном случае</li>
+                <li><input type="radio" name="Q5" value="A2"> Метод проверяет, существует ли число по указанном индексу. И если такое число есть - возвращает его</li>
+                <li><input type="radio" name="Q5" value="A3"> Такого метода не существует</li>
+                <li><input type="radio" name="Q5" value="A4"> Метод проверяет существование числа и в случае положительного результата возвращает итератор на это число</li>
+            </ul>
+
+            <h3>В чем разница между методами-итераторами end() и cend()?</h3>
+            <ul>
+                <li><input type="radio" name="Q6" value="A1"> cend() - старый аналог итератора для структур. Используется для большей совместимости с языком Си</li>
+                <li><input type="radio" name="Q6" value="A2"> cend() - возвращает последний константный элемент в структуре</li>
+                <li><input type="radio" name="Q6" value="A3"> cend() - возвращает итератор на последний элемент структуры</li>
+                <li><input type="radio" name="Q6" value="A4"> cend() - константный аналог итератора end()</li>
+            </ul>
+
+            <h3>Зачем нужен метод front()?</h3>
+            <ul>
+                <li><input type="radio" name="Q7" value="A1"> Возвращает первый элемент в структуре</li>
+                <li><input type="radio" name="Q7" value="A2"> Позволяет получить итератор на первый элемент структуры</li>
+                <li><input type="radio" name="Q7" value="A3"> Заменяет все элементы, равные первому, на значение, переданное в качестве параметра</li>
+                <li><input type="radio" name="Q7" value="A4"> Такого метода не существует</li>
+            </ul>
+
+            <h3>Какой контейнер из следующих не существует?</h3>
+            <ul>
+                <li><input type="radio" name="Q8" value="A1"> queue</li>
+                <li><input type="radio" name="Q8" value="A2"> priority_queue</li>
+                <li><input type="radio" name="Q8" value="A3"> stack</li>
+                <li><input type="radio" name="Q8" value="A4"> priority_stack</li>
+            </ul>
+
+            <h3>С какого стандарта языка C++ был добавлен контейнер "span"?</h3>
+            <ul>
+                <li><input type="radio" name="Q9" value="A1"> C++03</li>
+                <li><input type="radio" name="Q9" value="A2"> C++11</li>
+                <li><input type="radio" name="Q9" value="A3"> C++14</li>
+                <li><input type="radio" name="Q9" value="A4"> C++20</li>
+            </ul>
+
+            <h3>К каким из следующих контейнеров относится метод "insert_or_assign"?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q10" value="A1"> forward_list</li>
+                <li><input type="checkbox" name="Q10" value="A2"> map</li>
+                <li><input type="checkbox" name="Q10" value="A3"> set</li>
+                <li><input type="checkbox" name="Q10" value="A4"> multimap</li>
+                <li><input type="checkbox" name="Q10" value="A5"> unordered_map</li>
+            </ul>
+
+            <h3>У какого из следующих контейнеров существует метод "emplace_back", но не существует метод "emplace_front"?</h3>
+            <ul>
+                <li><input type="radio" name="Q11" value="A1"> deque</li>
+                <li><input type="radio" name="Q11" value="A2"> stack</li>
+                <li><input type="radio" name="Q11" value="A3"> unordered_multimap</li>
+                <li><input type="radio" name="Q11" value="A4"> vector</li>
+                <li><input type="radio" name="Q11" value="A5"> array</li>
+            </ul>
+
+            <h3>У каких из следующих контейнеров не существует метода "get_allocator"?</h3>
+            <ul>
+                <li><input type="checkbox" name="Q12" value="A1"> array</li>
+                <li><input type="checkbox" name="Q12" value="A2"> list</li>
+                <li><input type="checkbox" name="Q12" value="A3"> forward_list</li>
+                <li><input type="checkbox" name="Q12" value="A4"> multimap</li>
+                <li><input type="checkbox" name="Q12" value="A5"> stack</li>
+                <li><input type="checkbox" name="Q12" value="A6"> set</li>
+                <li><input type="checkbox" name="Q12" value="A7"> unordered_multiset</li>
+                <li><input type="checkbox" name="Q12" value="A8"> queue</li>
+            </ul>
+
+            <h3>Существует ли метод "contains" у контейнеров "set", "map", "multiset", "multimap", и если да, то в с какого стандарта он появился?</h3>
+            <ul>
+                <li><input type="radio" name="Q13" value="A1"> Не существует</li>
+                <li><input type="radio" name="Q13" value="A2"> С++03</li>
+                <li><input type="radio" name="Q13" value="A3"> С++11</li>
+                <li><input type="radio" name="Q13" value="A4"> С++17</li>
+                <li><input type="radio" name="Q13" value="A5"> С++20</li>
+            </ul>
+
+            <h3>Для чего нужен метод "extract" у контейнера "set"?</h3>
+            <ul>
+                <li><input type="radio" name="Q14" value="A1"> Извлечение элементов с его последующим удалением</li>
+                <li><input type="radio" name="Q14" value="A2"> Извлечение элементов без удаления</li>
+                <li><input type="radio" name="Q14" value="A3"> Глубокое копирование элемента по указанному ключу/итератору</li>
+                <li><input type="radio" name="Q14" value="A4"> Вставка диапазона элементов после указанного ключа/итератора</li>
+            </ul>
+
+            <h3>Каким образом, обычно, реализуется контейнер "map"?</h3>
+            <ul>
+                <li><input type="radio" name="Q15" value="A1"> В виде хэш-таблицы</li>
+                <li><input type="radio" name="Q15" value="A2"> В виде обычно массива, но ассоциативного</li>
+                <li><input type="radio" name="Q15" value="A3"> В виде красно-черных деревьев</li>
+                <li><input type="radio" name="Q15" value="A4"> В виде ассоциативного списка значений</li>
+                <li><input type="radio" name="Q15" value="A5"> В виде ассоциативной очереди</li>
+            </ul>
+
+            <h3>Выберите ассоциативные контейнеры среди приведенных:</h3>
+            <ul>
+                <li><input type="checkbox" name="Q16" value="A1"> forward_list</li>
+                <li><input type="checkbox" name="Q16" value="A2"> set</li>
+                <li><input type="checkbox" name="Q16" value="A3"> array</li>
+                <li><input type="checkbox" name="Q16" value="A4"> vector</li>
+                <li><input type="checkbox" name="Q16" value="A5"> multimap</li>
+                <li><input type="checkbox" name="Q16" value="A6"> map</li>
+                <li><input type="checkbox" name="Q16" value="A7"> priority_queue</li>
+                <li><input type="checkbox" name="Q16" value="A8"> stack</li>
+            </ul>
+
+            <h3>Что делает метод "top()" в контейнере "queue"?</h3>
+            <ul>
+                <li><input type="radio" name="Q17" value="A1"> Возвращает первый элемент в очереди</li>
+                <li><input type="radio" name="Q17" value="A2"> Возвращает итератор на первый элемент в очереди</li>
+                <li><input type="radio" name="Q17" value="A3"> Такого метода в классе "queue" не существует</li>
+                <li><input type="radio" name="Q17" value="A4"> Вставляет диапазон элементов перед первым элементом очереди</li>
+            </ul>
+
+            <h3>Укажите сложность вставки элемента в "unordered_map" по времени (вставка по ключу):</h3>
+            <ul>
+                <li><input type="radio" name="Q18" value="A1"> O(n^2)</li>
+                <li><input type="radio" name="Q18" value="A2"> O(1)</li>
+                <li><input type="radio" name="Q18" value="A3"> O(n)</li>
+                <li><input type="radio" name="Q18" value="A4"> O(n*log(n))</li>
+            </ul>
+
+            <h3>Методы splice и splice_after принадлежат следующим контейнерам:</h3>
+            <ul>
+                <li><input type="radio" name="Q19" value="A1"> array и vector соответственно</li>
+                <li><input type="radio" name="Q19" value="A2"> set и map соответственно</li>
+                <li><input type="radio" name="Q19" value="A3"> stack и queue соответственно</li>
+                <li><input type="radio" name="Q19" value="A4"> list и forward_list соответственно</li>
+            </ul>
+
+            <h3>Какой из следующих методов был добавлен в "queue" в стандарте C++11?</h3>
+            <ul>
+                <li><input type="radio" name="Q20" value="A1"> push</li>
+                <li><input type="radio" name="Q20" value="A2"> size</li>
+                <li><input type="radio" name="Q20" value="A3"> emplace</li>
+                <li><input type="radio" name="Q20" value="A4"> empty</li>
+                <li><input type="radio" name="Q20" value="A5"> back</li>
+            </ul>
+            <input type="submit" style="margin-left:2cm; padding:initial; font-size:32px" value="Завершить тест" />
+        </form>
+    </div>
+
+</body>
